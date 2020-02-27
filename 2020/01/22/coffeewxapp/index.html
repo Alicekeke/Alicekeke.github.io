@@ -319,7 +319,7 @@
 
 	<a href="/2020/01/22/coffeewxapp/" itemprop="url">
 		<time datetime="2020-01-21T16:00:00.000Z" itemprop="dateUpdated">
-	  		2020-01-22
+	  		2020-02-27
 	  </time>
 	</a> 
 
@@ -344,10 +344,8 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>首先祝看到这篇文章的同学大家新年好呀，先讲一下我为啥要写这个小程序，是这样的，我上上个星期放假回来就开始我的兼职之路，我从高三毕业的那个暑假开始，每到寒暑假有机会的话就在老家的一家咖啡店兼职，算上今年，断断续续应该有两年年了吧。回家朋友们总问我什么专业，专业能干些什么，我曾兴冲冲给人讲，但人家当然不会感兴趣。。。就想做一些成体系的东西出来，再加上自己一直在咖啡店打工，就想试试做一个咖啡店点单展示的小程序。这是我在下班后空闲时间写的，也没有什么UI稿，需求分析，产品测试什么的。就是自己想，自己搞了，一切都以我为主。嗯。。。怎么说呢，就是自己写的一个小玩意吧，感觉一套写下来踩过的坑，学到的东西还挺多的，就想整理出来，希望能对学习小程序开发的同学们有所帮助吧。</p>
-<blockquote>
-<p>我边写边做的笔记都很散乱的记在OneNote，回头看自己写的笔记我都懵逼啦，我当时到底是个什么思路。。。但我说到做到，我一定会写的尽可能的详细的，保证完整看完这篇同学都能自己整一个出来！</p>
-</blockquote>
+		<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>图床老挂， 在掘金看吧，阅读体验更好 👉<a href="https://juejin.im/post/5e280d53e51d45020837f681" target="_blank" rel="noopener">看这里</a></p>
+<p>平安夜那天晚上下课打着伞想到的idea做出来了，写个总结</p>
 <h2 id="页面结构"><a href="#页面结构" class="headerlink" title="页面结构"></a>页面结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;pages&quot;: [</span><br><span class="line">  &quot;pages/buy/buy&quot;,  //菜单页</span><br><span class="line">  &quot;pages/index/index&quot;,  //主页</span><br><span class="line">  &quot;pages/shopcart/shopcart&quot;,  //购物车页面</span><br><span class="line">  &quot;pages/mine/mine&quot;,  //个人主页</span><br><span class="line">  &quot;pages/room/room&quot;,  //房间页</span><br><span class="line">  &quot;pages/address/address&quot;   //门店地址页</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
 
 <h2 id="基本的准备"><a href="#基本的准备" class="headerlink" title="基本的准备"></a>基本的准备</h2><h4 id="iconfont图标使用"><a href="#iconfont图标使用" class="headerlink" title="iconfont图标使用"></a>iconfont图标使用</h4><p>在iconfont找到喜欢的，添加购物车，下载代码，放入小程序的assests下的fonts目录 ，吧iconfont.css文件重命名为iconfont.wxss文件<br>，iconfont.wxss最下面那几个类名选择器，按类目在自己的代码中引入，再根据自己的需要调整样式即可，后期要是再看到自己喜欢的图标，就需要重新下载更新文件，或者找一个在线合并svg的工具网站，（ps：嗯。我就是又看到自己喜欢的图标去合并了）</p>
@@ -514,13 +512,13 @@
 <li>开发者工具用的挺难受的。嗯…</li>
 </ul>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>这个小程序是绝对的新手友好呀，时间紧张，页面数据也不多，所以也没有用云函数，模拟数据接口老挂(´×ω×`) 我就直接把数据都是写在本地啦，只要在github上把它拉下来，在微信开发者工具中打开，就能够看到我所有的逻辑和实现思路，绝对的入门友好教程!         
-项目的详细功能，难点等到这里就差不多结束了，断断续续写了有两个星期吧，写文章也花了两三天，好累的说! 在我下班时间写的，上班时间有好好上班! (亲爱的老板娘看到了吗!) ，另外还有一些坑没有填，比如说map组件的优化，规格选择、scrollview显示详情跳转的小bug等。自己的项目笔记里的TODOlist也没有全部checked。没有做的尽善尽美总是差点意思，但是现在到了正月，店里的生意很好，每天都很忙，我暂时没有时间去fix bug，等…等我开学了，会努力不断地去优化它的! 都看到这啦! 喜欢的话可以给我一个赞 想和大家一起交流学习，更希望大家多多给小白我提宝贵意见，2020，脱贫入欧就靠大家的金手指了!       </p>
-<p>写完这个项目我明白了写代码和拉花一样，需要多练。我相信一万小时定律，孰能生巧 更何况我们前端er 要学的还有很多呀!，悄咪咪放一张去年寒假在店里偷写代码的照片做结尾吧，大家新年快乐呀！     </p>
-<p><img src="https://upload-images.jianshu.io/upload_images/18648827-6c7ce78cec561459.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="coding.jpg"></p>
+项目的详细功能，难点等到这里就差不多结束了，断断续续写了有两个星期吧，写文章也花了两三天，好累的说! 在我下班时间写的，上班时间有好好上班! (亲爱的老板娘看到了吗!) ，另外还有一些坑没有填，比如说map组件的优化，规格选择、scrollview显示详情跳转的小bug等。自己的项目笔记里的TODOlist也没有全部checked。没有做的尽善尽美总是差点意思，但是现在到了正月，店里的生意很好，每天都很忙，我暂时没有时间去fix bug，等…等我开学了，会努力不断地去优化它的! 希望大家多多给小白我提宝贵意见    </p>
+<p>放张去年寒假在店里偷写代码的照片做结尾吧，当年真的稚嫩，写几行html造个简单页面都兴冲冲拍照片记录，回头看太傻了😤（挠头.jpg）<br>就这样，大家2020新年快乐呀！😝</p>
+<p><img src="http://q6csqg15o.bkt.clouddn.com/blog/images/coding.jpg" alt="coding.jpg"></p>
 	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/img/2020.jpg"></div>
+	<div id="current-post-cover" data-scr="/img/post-cover/1.jpg"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -534,6 +532,10 @@
 				
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+			<a href="/2020/02/27/OMG_list/" title="李佳琦可视化list" rel="prev">
+				&laquo;上一篇
+			</a>
 		
 		
 			<a href="/2019/11/10/cloneShallow-cloneDeep/" title="深拷贝与浅拷贝" rel="next">
@@ -557,6 +559,29 @@
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2020/02/27/OMG_list/" title="李佳琦可视化list">
+								李佳琦可视化list			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 27日, 2020				
+							</p>
+							<p class="relate-post-content">
+								前言做这个李佳琦推荐口红可视化倒也不是因为自己喜欢买口红或者喜欢看李佳琦，是一次在车上逛微博看到热搜上一个帖子，很详细的整理了这些口红，用手机自带的备忘录写的，但略显简陋，颜色展示仅仅是在色号后面加了个很小的色卡，当时就想，如果可以做...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2020/02/27/OMG_list/" title="李佳琦可视化list">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/post-cover/4.jpg" alt="李佳琦可视化list">
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2019/11/10/cloneShallow-cloneDeep/" title="深拷贝与浅拷贝">
 								深拷贝与浅拷贝			
 							</a>
@@ -573,7 +598,7 @@
 						<div class="relate-post-cover">
 							<a href="/2019/11/10/cloneShallow-cloneDeep/" title="深拷贝与浅拷贝">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/3.jpg" alt="深拷贝与浅拷贝">
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/post-cover/3.jpg" alt="深拷贝与浅拷贝">
 							</a>
 						</div>
 					</li>											
@@ -600,7 +625,7 @@ ECMAScript 和 JavaScriptECMA 是标准，JS 是实现ECMAScript 简称 ECMA 或
 						<div class="relate-post-cover">
 							<a href="/2019/07/30/es6note/" title="es6 note">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/es6.jpg" alt="es6 note">
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/post-cover/es6.jpg" alt="es6 note">
 							</a>
 						</div>
 					</li>											
@@ -623,7 +648,7 @@ ECMAScript 和 JavaScriptECMA 是标准，JS 是实现ECMAScript 简称 ECMA 或
 						<div class="relate-post-cover">
 							<a href="/2019/06/03/a02/" title="傲慢与偏见 Mr.Darcy">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/darcy1.jpg" alt="傲慢与偏见 Mr.Darcy">
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/post-cover/darcy1.jpg" alt="傲慢与偏见 Mr.Darcy">
 							</a>
 						</div>
 					</li>											
@@ -647,7 +672,7 @@ ECMAScript 和 JavaScriptECMA 是标准，JS 是实现ECMAScript 简称 ECMA 或
 						<div class="relate-post-cover">
 							<a href="/2019/06/02/a01/" title="随笔杂谈">				
 								
-								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/2.jpg" alt="随笔杂谈">
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/post-cover/2.jpg" alt="随笔杂谈">
 							</a>
 						</div>
 					</li>											
